@@ -13,7 +13,7 @@ const NewTabInput: React.FC<NewTabInputProps> = ({cancelNewTab, addNewTab}) => {
   }
 
   return (
-    <div className='p-2 h-12 flex items-center bg-[#0f151e]'>
+    <div className='p-2 h-12 flex items-center bg-[#181818] rounded-t-lg'>
       <form 
         onSubmit={(e: FormEvent<HTMLFormElement>) => {
           e.preventDefault();
@@ -33,7 +33,7 @@ const NewTabInput: React.FC<NewTabInputProps> = ({cancelNewTab, addNewTab}) => {
           type="text"
           value={tabValue}
           onChange={handleInputChange}
-          className='w-32 focus-within:outline outline-1 rounded outline-sky-700 p-1'
+          className='w-32 focus-within:outline outline-1 rounded outline-neutral-700 p-1 bg-neutral-800'
           onBlur={cancelNewTab}
         />
       </form>

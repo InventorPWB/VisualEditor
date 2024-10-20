@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <div className="max-w-screen max-h-screen w-screen h-screen p-20 bg-[#181818] overflow-hidden">
+      <div className="max-w-screen max-h-screen w-screen h-screen px-20 pt-10 pb-20 bg-[#181818] overflow-hidden">
         <EditorComponent />   
       </div>
     </>
